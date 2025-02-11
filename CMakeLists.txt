@@ -46,7 +46,8 @@ pico_enable_stdio_usb(U4C7-servo-motor 0)
 
 # Add the standard library to the build
 target_link_libraries(U4C7-servo-motor
-        pico_stdlib)
+        pico_stdlib
+        hardware_pwm)
 
 # Add the standard include files to the build
 target_include_directories(U4C7-servo-motor PRIVATE
