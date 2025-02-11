@@ -54,14 +54,14 @@ int main() {
         // Movimento suave de 0 a 180 graus
         for (uint32_t pulse = 500; pulse <= 2400; pulse += 5) {
             set_servo_angle(slice_num, channel, pulse);
-            set_servo_angle(slice_num, channel_led, pulse);
+            set_servo_angle(slice_num_led, channel_led, pulse);
             sleep_ms(10);
         }
         
         // Movimento suave de 180 a 0 graus
         for (uint32_t pulse = 2400; pulse >= 500; pulse -= 5) {
             set_servo_angle(slice_num, channel, pulse);
-            set_servo_angle(slice_num, channel_led, pulse);
+            set_servo_angle(slice_num_led, channel_led, pulse);
             sleep_ms(10);
         }
     }
